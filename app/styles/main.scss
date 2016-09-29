@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-family: 'Helvetica'
+}
+
+.pulldown-question {
+	position: relative;
+	float: left;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: auto;
+  	overflow-x: hidden;
+	-webkit-scroll-snap-type: mandatory;
+  	-webkit-scroll-snap-destination: 0% 0%;
+	scroll-snap-type: mandatory;
+	scroll-snap-align: none start;
+	scroll-snap-points-y: repeat(100%);
+	scroll-snap-destination: 0% 0%;
+	-webkit-scroll-snap-destination: 0% 0%;
+	&__help {
+		padding: 15px;
+		// height: 630px;
+		height: 40vh;
+		width: 100%;
+		position: relative;
+		-webkit-scroll-snap-coordinate: 0% 0%;
+		scroll-snap-coordinate: 0% 0%;
+		float: left;
+		vertical-align: top;
+	}
+	&__question {
+		-webkit-scroll-snap-coordinate: 0% 0%;
+		scroll-snap-coordinate: 0% 0%;
+		// height: 630px;
+		height: 100vh;
+		width: 100%;
+		position: relative;
+		float: left;
+		vertical-align: top;
+	}
+	&__details{
+		padding: 30px 15px;
+	}
+	&__indicator {
+		padding: 5px 10px;
+		color: white;
+		text-align: center;
+		background-color:#0b89dc;
+	}
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+
+
+input[type="text"]{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #333;
+	margin: 10px 0;
+	padding: 7px 2px;
+}
+
+button {
+	width: 100%;
+	padding: 15px 5px;
+	min-height: 1.4rem;
+	background-color: #0b89dc;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
